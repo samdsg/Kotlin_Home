@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:paddingVertical="13dp"
-    android:paddingHorizontal="11dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
     android:background="@drawable/shadow"
     android:elevation="2dp"
+    android:paddingHorizontal="11dp"
+    android:paddingVertical="13dp"
 >
     <TextView
         android:id="@+id/answer_num"
@@ -16,8 +16,8 @@
         android:textColor="#016A9A"
         android:textFontWeight="600"
         android:textSize="17sp"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
     />
 
@@ -32,8 +32,8 @@
         android:textAllCaps="true"
         android:textColor="#000"
         android:textSize="16sp" android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@id/answer_num"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
     />
 </androidx.constraintlayout.widget.ConstraintLayout>

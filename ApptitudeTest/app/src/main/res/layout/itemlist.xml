@@ -1,9 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#fff">
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   android:background="#fff">
+
+    <ImageView
+        android:id="@+id/stat_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/icon_15_trophy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+    />
+
+    <TextView
+        android:id="@+id/stat_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16.7dp"
+        android:fontFamily="@font/opensansbold"
+        android:text="Total Score"
+        android:textColor="#1CC4B8"
+        app:layout_constraintEnd_toEndOf="@id/stat_image"
+        app:layout_constraintStart_toStartOf="@id/stat_image"
+        app:layout_constraintTop_toBottomOf="@id/stat_image"
+    />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
